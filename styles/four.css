@@ -1,0 +1,70 @@
+/* portfolio-4 */
+#portfolio-4__section {
+    margin-top: 60px;
+}
+
+#portfolio-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+    margin: 0 20px;
+}
+
+#portfolio-4__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#portfolio-4__head {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#portfolio-4__text {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+#portfolio-4__radiobtn {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    margin-bottom: 20px;
+}
+
+.portfolio-4__radiobtn__content {
+    padding: 8px 20px;
+    margin: 10px 5px;
+}
+
+#portfolio-4__pictures {
+    display: flex;
+}
+
+.portfolio-4__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio-4__column__content {
+    padding: 0 12px;
+    margin-bottom: 30px;
+}
+
+.portfolio-4__column__content > img {
+    width: 100%;
+    height: auto;
+}
+
+/* team-4 */
