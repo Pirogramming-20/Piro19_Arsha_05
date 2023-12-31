@@ -1,0 +1,126 @@
+#why-us-2{
+    background-color: #f3f5fa;
+    padding: 60px 0;
+}
+
+#why-us-box-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: 5rem;
+}
+
+#why-us-left-2{
+    width: 50%;
+    padding-right: 100px;
+}
+#why-us-right-2{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+#why-us-left-content-2{
+    margin-top: 60px;
+}
+
+#left-content-2{
+    font-weight: 400;
+    font-size: 34px;
+    color: #37517e;
+    line-height: 1.2;
+}
+
+#left-content-strong-2{
+    font-weight: bolder;
+    font-size: 34px;
+    color: #37517e;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+#left-content-p-2{
+    font-size: 15px;
+    color: #848484;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#why-us-right-img-2{
+    width: 90%;
+}
+
+#accordion-list-2{
+    gap: 20px;
+}
+
+#accordion-item-2{
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#accordion-item-2 input{
+    display: none;
+}
+
+#accordion-content-2{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#accordion-item-2 input:checked ~ #accordion-content-2{
+    max-height: 100px;
+    margin-top: 10px;
+}
+
+#accordion-span-2{
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+#accordion-question-2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-right: 30px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+#accordion-item-2:hover{
+    #accordion-question-2{
+        color:#47b2e4;
+    }
+}
+
+#accordion-item-2 input:checked ~ #accordion-question-2{
+    color: #47b2e4;
+}
+
+#accordion-p-2{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#drop-down::before{
+    content: "\005E";
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(-1);
+    display: inline-block;
+}
+
+#accordion-item-2 input:checked ~  #accordion-question-2 #drop-down::before{
+    transform: scaleY(1);
+}

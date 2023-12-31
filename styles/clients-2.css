@@ -1,0 +1,36 @@
+#clients-2{
+    width: 100%;
+    display: flex;
+    background-color: #f3f5fa;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#clients-box-2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#client-2{
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#img-2{
+    padding: 15px 0;
+    max-width: 90px;
+    filter: grayscale(100);
+    transition: 0.3s;
+}
+
+#img-2:hover{
+    transform: scale(1.1);
+    filter:none;
+}
