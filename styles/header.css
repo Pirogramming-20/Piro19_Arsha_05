@@ -1,3 +1,9 @@
+/* stickly */
+.header-1,.main-top-1{
+  position: fixed;
+
+}
+
 /* header부분 */
 .header-icon-1{
   width: 22px;
@@ -15,6 +21,7 @@ header{
   height: 32px;
   background-color: #023b6d;
   color: white;
+  width: 100%;
   justify-content: space-between;
 }
 .top-left-1>img{
