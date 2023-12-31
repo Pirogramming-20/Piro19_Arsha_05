@@ -1,0 +1,185 @@
+@import "./reset.css";
+
+#Graph-hayoung{
+    display: flex;
+}
+
+/* 전체 스타일 */
+
+
+/* Graph-hayoung 스타일 */
+
+
+#Graph_left {
+    flex: 1;
+}
+
+#Graph_left_img {
+    width: 456px;
+    height: 280;
+}
+#Graph_left_img img {
+    max-width: 100%;
+}
+
+
+
+
+
+#Graph_right {
+    flex: 2;
+    padding: 20px;
+}
+
+#Graph_right_title {
+    font-size: 36px; /*font-size h3태그로 바꾸기*/
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: navy;
+
+}
+
+#Graph_right_content {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#Graph_right_Graph > div {
+    margin-bottom: 10px;
+    color: navy;
+}
+
+#Graph_right_Graph_1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#Graph_name, 
+#percent {
+    margin-right: 10px;
+}
+
+#stick-bar {
+    height: 20px;
+    flex-grow: 1;
+    background-color: navy;
+    position: relative;
+}
+
+#stick {
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+}
+
+/* <div id="Graph_right_Graph">
+    <div id="Graph_right_Graph_1">
+        <span id="Graph_name">HTML</span>
+        <div id="stick-bar">
+        <div id="stick" style="width: 100%;"></div>
+        </div>
+        <div id="stick" style="width: 100%;">stick</div>
+        <span id="percent">100%</span>
+    </div> */
+
+/* <div id="Graph_right_Graph">
+    <div class="graph-bar">
+        <span class="graph-name">HTML</span>
+        <div class="progress-bar">
+        <div class="progress" style="width: 100%;"></div>
+        </div>
+        <span class="percent">100%</span>
+    </div>
+</div> */
+              
+
+
+
+/* Services-hayoung 스타일 */
+#Services-hayoung {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#Services_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#Services_content_1 {
+    margin-bottom: 20px;
+}
+
+#Services_content_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Services_BOX {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#Services_BOX_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+#Services_BOX_titles {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#Services_BOX_content {
+    font-size: 14px;
+}
+
+/* CallToAction-hayoung 스타일 */
+#CallToAction-hayoung {
+    display: flex;
+    padding: 20px;
+    background-color: #eee;
+}
+
+#CallToAction_left {
+    flex: 3;
+    padding: 20px;
+}
+
+#CallToAction_left img {
+    max-width: 100%;
+    height: auto;
+}
+
+#CallToAction_left_title {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+#CallToAction_left_content {
+    margin-top: 10px;
+}
+
+#CallToAction_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CallToAction_right_button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
