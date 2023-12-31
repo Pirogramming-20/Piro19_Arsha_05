@@ -1,0 +1,170 @@
+/* header부분 */
+.header-icon-1{
+  width: 22px;
+  height: 22px;
+}
+.img-1{
+  height: 25px;
+}
+
+header,.top-center-1,.top-right-1,.free-1,.top-left-1{
+  display: flex;
+  align-items: center;
+}
+header{
+  height: 32px;
+  background-color: #023b6d;
+  color: white;
+  justify-content: space-between;
+}
+.top-left-1>img{
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.gray-1{
+  fill: currentColor;
+  opacity: 0.5;
+}
+
+#header-icon-left-1{
+  padding:5px;
+}
+
+.header-center-name-1{
+  margin: 0 10px;
+}
+.free-1{
+  padding: 0 16px;
+  margin-left: 15px;
+  background-color:#00A6EB ;
+  height: 32px;
+  padding: 0 16px;
+}
+
+/* maintop부분 */
+.main-1{
+  background-color: #37517e;
+  height: 80vh;
+  
+
+}
+#Drop{
+  display: flex;
+  align-items: center;
+
+}
+
+#Drop:checked{
+
+}
+.main-top-1{
+  width: min(1116px,100%);
+  margin: auto;
+  padding: 0 12px;
+}
+
+.main-top-1,.main-ul-1{
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  color: white;
+  justify-content: space-between;
+
+}
+.main-logo-1{
+  font-size: 30px;
+  padding-left: 12px;
+}
+.main-ul-1{
+  padding-right: 12px;
+  font-size: 15px;
+}
+.main-ul-1>li{
+  padding: 10px 0 10px 30px;
+}
+.main-ul-1>li:hover{
+  color: #47B2E4;
+}
+.main-ul-1>li:first-of-type{
+  color: #47B2E4;
+}
+.main-btn-1>button,.mid-left-lbtn-1{
+  all:unset;
+  padding: 8px 20px;
+  border: 2px solid #47b2e4 ;
+  border-radius: 50px;
+  font-size: 14px;
+  
+}
+.main-btn-1>button:hover{
+  background-color: #47B2E4;
+}
+
+
+
+/* main bottom부분 */
+.mid-left-img-1{
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+  margin-right: 5px;
+
+
+}
+@keyframes move{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+
+}
+.mid-left-rbtn-1{
+  all: unset;
+}
+.main-mid-1{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content:center ;
+  padding: 72px 12px 0 12px;
+  color: white;
+  width: min(100%,1320px);
+}
+.mid-left-top-1{
+  font-size: 48px;
+  margin-bottom: 10px;
+
+}
+.mid-img-1{
+  height: 452px;
+  animation: move 2s ease-in-out infinite alternate-reverse both;
+}
+.mid-left-mid-1{
+  font-size: 24px; 
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mid-left-1{
+  padding: 0 12px;
+  flex: 1;
+}
+.mid-left-rbtn-1{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.mid-left-lbtn-1{
+  margin-top: 10px;
+  background-color: #47b2e4 ;
+}
+.mid-left-bottom-1{
+  display: flex;
+}
+
+.pricing-icon-1{
+  height: 24px;
+  width: 24px;
+}
