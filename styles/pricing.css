@@ -1,0 +1,122 @@
+.pricing-1{
+  width: min(100%,1116px);
+  margin: auto;
+  padding: 60px;
+}
+
+/* pricing-top부분 */
+.pricing-top-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  
+}
+.pricing-top-1 >:first-child{
+  font-size: 32px;
+  padding: 20px;
+  font-weight: bold;
+  color: #37517E;
+  position: relative;
+  margin-bottom: 20px;
+}
+.pricing-top-1 >:first-child::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.pricing-top-1 >:first-child::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+
+}
+.pricing-top-1 >:nth-child(3){
+  text-align: center;
+}
+/* pricing-mid부분 */
+.pricing-mid-1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 24px;
+  padding-top: 20px;
+}
+.pricing-box-1{
+  padding: 60px 40px;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+  height: 75%;
+  border-top: 4px solid #fff;
+  border-radius: 5px;
+}
+.pricing-name-1{
+  font-size: 20px;
+  color: #37517E;
+  margin-bottom: 15px;
+}
+.pricing-box-1>ul{
+  padding: 20px 0;
+  margin-bottom: 16px;
+}
+.pricing-box-1>ul>li{
+  font-size: 16px;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #999999;
+
+  
+}
+.pricing-box-1>button{
+  all:unset;
+  padding:12px 35px;
+  border-radius: 50px;
+  color: #47b2e4;
+  font-size: 16px;
+  border: 1px solid #47b2e4;
+}
+.pricing-icon-1{
+  height: 24px;
+  width: 24px;
+  color: #28a745;
+}
+.money-1{
+  font-size: 48px;
+}
+.mark-1{
+  font-size: 28px ;
+}
+.pricing-box-1:nth-child(4){
+  font-size: 18px;
+}
+.month-1{
+  font-size: 18px;
+  color:#47B2E4 ;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+#pricing-center-1{
+  border-top-color: #47b2e4;
+}
+.x-1{
+  color: #ccc;;
+  text-decoration: line-through;
+}
+#xicon-1{
+  color: #ccc;
+}
+
+#princing-center-btn-1{
+  color: white;
+  background-color: #47b2e4;
+}
