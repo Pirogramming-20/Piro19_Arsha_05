@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+    color: #444444;
 }
 ol, ul {
 	list-style: none;
