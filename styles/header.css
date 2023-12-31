@@ -39,6 +39,7 @@ header{
   background-color:#00A6EB ;
   height: 32px;
   padding: 0 16px;
+  justify-content: center;
 }
 
 /* maintop부분 */
@@ -48,15 +49,30 @@ header{
   
 
 }
-#Drop{
+.drop-1{
   display: flex;
   align-items: center;
+  position: relative;
 
+} 
+/* .drop-1:hover + .dropdownbox-1{
+  display: block;
+
+} */
+.dropdownbox-1{
+  border-radius: 4px;
+  background-color:white ;
+  color: #444444;
+  justify-content: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.dropdownbox-1>li{
+  padding: 8px 10px;
 }
 
-#Drop:checked{
 
-}
 .main-top-1{
   width: min(1116px,100%);
   margin: auto;
@@ -98,6 +114,7 @@ header{
 }
 .main-btn-1>button:hover{
   background-color: #47B2E4;
+  color: white;
 }
 
 
@@ -164,7 +181,3 @@ header{
   display: flex;
 }
 
-.pricing-icon-1{
-  height: 24px;
-  width: 24px;
-}
