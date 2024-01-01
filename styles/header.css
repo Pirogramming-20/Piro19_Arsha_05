@@ -6,6 +6,15 @@ header{
   z-index: 1000;
 }
 
+
+.scroll-1 {
+  background-color: rgba(40, 58, 90, 0.9);
+}
+
+
+
+
+
 /* header부분 */
 .header-icon-1{
   width: 22px;
