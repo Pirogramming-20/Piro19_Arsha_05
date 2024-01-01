@@ -1,6 +1,8 @@
 #faq-2{
     background-color: #f3f5fa;
     padding: 60px 0;
+    display: flex;
+    justify-content: center;
 }
 
 #faq-box-2{
@@ -63,6 +65,8 @@
 
 #faq-accordion-question-2{
     color: #37517e;
+    display: block;
+    position: relative;
 }
 
 @media screen and (min-width: 576px) {
@@ -99,7 +103,8 @@
     content: "\005E";
     font-size: 24px;
     position: absolute;
-    right: 110px;
+    right: 0px;
+    top: 0px;
     transform: scaleY(-1);
     display: inline-block;
 }
