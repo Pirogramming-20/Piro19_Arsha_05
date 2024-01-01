@@ -5,11 +5,68 @@ header{
   top:0;
   z-index: 1000;
 }
+.free-1:hover{
+  background-color:#00B4FF ;
+}
+.ham-1{
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+  opacity: 0;
+}
 
+@media screen and (max-width:991px) {
+  .main-1{
+    height: 1380px !important;
+  }
 
+  .scroll-1{
+    background-color:#37517e ;
+  }
+  .main-ul-1{
+    display: none !important;
+  }
+
+  .main-mid-1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 325px 12px 0 12px;
+  }
+  .mid-img-1{
+    width: 348px;
+    height: 288px;
+
+  }
+  .main-right-1{
+    width: 348px;
+    height: 288px;
+    flex: 1;
+  }
+  .mid-left-bottom-1{
+    display: flex;
+    justify-content: center;
+  }
+  .ham-1{
+    width: 28px;
+    height: 28px;
+    opacity: 1;
+    filter: invert(1);
+    padding-right: 90px;
+    
+  }
+  .main-logo-1{
+    padding-left: 80px;
+  }
+
+}
 .scroll-1 {
   background-color: rgba(40, 58, 90, 0.9);
 }
+
+
 
 /* header부분 */
 .header-icon-1{

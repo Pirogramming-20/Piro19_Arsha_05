@@ -4,6 +4,7 @@
   padding: 60px;
 }
 
+
 /* pricing-top부분 */
 .pricing-top-1{
   display: flex;
@@ -50,6 +51,15 @@
   grid-template-columns: repeat(3,1fr);
   grid-gap: 24px;
   padding-top: 20px;
+}
+@media screen and (max-width: 991px) {
+  .pricing-mid-1{
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 337px;
+    justify-content: center;
+    margin: auto;
+  }
 }
 .pricing-box-1{
   padding: 60px 40px;
