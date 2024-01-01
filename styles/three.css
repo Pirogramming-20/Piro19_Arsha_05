@@ -1,10 +1,83 @@
 @import "./reset.css";
 
+
+/* ======== */
+.container_graph_padding_up-down {
+  padding: 60px 0;
+
+
+}
+.container_graph_padding_side {
+  margin-left: 72.667px;
+  margin-right: 72.667px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+
+}
+
+
+.row {
+  margin-left: 12px;
+  margin-right: 12px;
+
+}
+.Graph_left_img {
+  padding-left: 12px;
+  padding-right: 12px;
+
+}
+.Graph_left_img_src {
+
+}
+
+.Graph_right {
+  padding-left: 12px;
+  padding-right: 12px;
+
+
+
+
+}
+.Graph_right h{
+  margin-bottom: 8px;
+
+}
+
+
+.Graph_right_content{
+  margin-bottom: 16px;
+
+}
+
+.Graph_right_Graph{
+
+
+}
+
+.progress{
+
+
+}
+
+.skill{
+  margin-bottom: 6px;
+
+}
+
+.progress-bar-wrap{
+  
+
+}
+
+
+
+/* ======원본 부분====== */
 #Graph-hayoung {
   display: flex;
   flex-wrap: wrap; /* 추가: 컨테이너들이 화면 너비에 따라 자동으로 줄바꿈되도록 설정 */
   padding: 100px 15px; /* 수정: 좌우 패딩을 상대적으로 설정 */
-  justify-content: center; /* 추가: 컨테이너들이 중앙에 위치하도록 설정 */
+  justify-content: space-between;
   max-width: 1200px; /* 추가: 최대 너비 설정 */
   margin: auto; /* 수정: 수동으로 설정된 마진을 중앙 정렬로 변경 */
 }
@@ -17,7 +90,7 @@
 } */
 #Graph_left,
 #Graph_right {
-  flex: 1 1 100%; /* 수정: flex-basis를 100%로 설정하여, 990px 이하에서 100% 너비를 가지도록 설정 */
+  flex: 1 1 auto; 
   box-sizing: border-box; /* 추가: 패딩을 너비에 포함 */
   padding: 20px; /* 수정: 기존의 padding-left, padding-right 제거하고 상하좌우 패딩으로 변경 */
 }
@@ -149,8 +222,26 @@
   background-color: #315d8d;
 }
 
-/* ==============
+/* =======그래프에러문제 해결코드=======
  */
+
+
+@media (max-width: 990px) {
+  #Graph-hayoung {
+    flex-direction: column; /* 자식 요소들을 세로로 쌓음 */
+  }
+
+  #Graph_left,
+  #Graph_right {
+    width: 100%; /* 뷰포트가 작을 때 전체 너비 사용 */
+    margin-bottom: 20px; /* 요소들 사이에 공간 추가 */
+  }
+
+  .Graph_right_Graph_s .graph-bar {
+    width: 100%; /* 작은 화면에서 프로그레스 바가 전체 너비를 차지하도록 설정 */
+  }
+}
+
 /* 화면 너비가 990px 초과일 때 적용될 스타일 */
 @media (min-width: 991px) {
   #Graph_left,
