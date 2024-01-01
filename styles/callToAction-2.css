@@ -1,0 +1,118 @@
+#call-to-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img_three/CallToAction.png");
+    background-size: cover;
+    padding: 120px 0;
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9), url("../img_three/CallToAction.png"));
+
+}
+
+#call-to-action-box{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#call-to-action-left{
+    width: 75%;
+    color: white;
+}
+
+#call-to-action-right{
+    width: 25%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#call-to-action-h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#call-to-action-p{
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+#call-to-action-btn{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 576px) {
+    #call-to-action-box-2{
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #call-to-action-box-2{
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #call-to-action-box-2{
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #call-to-action-box-2{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #call-to-action-box-2{
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width:990px){
+    #call-to-action-box{
+        display: block
+    }
+    #call-to-action-right{
+        width: 100%;
+        padding-top: 1.2rem;
+    }
+    #call-to-action-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #call-to-action-btn{
+        display: inline-block;
+    }
+    #call-to-action-p{
+        text-align: center;
+    }
+}
+
+#call-to-action-btn:hover{
+    border: 2px solid #47b2e4;
+    background-color: #47b2e4;
+}
