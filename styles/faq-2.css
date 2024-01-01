@@ -60,3 +60,54 @@
 #faq-list-2{
     gap: 20px;
 }
+
+#faq-accordion-question-2{
+    color: #37517e;
+}
+
+@media screen and (min-width: 576px) {
+    #faq-box-2{
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #faq-box-2{
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #faq-box-2{
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #faq-box-2{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #faq-box-2{
+        max-width: 1320px;
+    }
+}
+
+#faq-drop-down::before{
+    content: "\005E";
+    font-size: 24px;
+    position: absolute;
+    right: 110px;
+    transform: scaleY(-1);
+    display: inline-block;
+}
+
+#accordion-item-2 input:checked ~  #faq-accordion-question-2 #faq-drop-down::before{
+    transform: scaleY(1);
+}
+
+#accordion-item-2 input:checked ~ #faq-accordion-question-2{
+    color: #47b2e4;
+}
