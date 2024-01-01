@@ -92,12 +92,20 @@
 }
 .money-1{
   font-size: 48px;
+  margin-left: 17px;
+}
+.price-1{
+  position: relative;
 }
 .mark-1{
   font-size: 28px ;
+  top:4px;
+  position: absolute;
+
 }
 .pricing-box-1:nth-child(4){
   font-size: 18px;
+
 }
 .month-1{
   font-size: 18px;
@@ -116,7 +124,14 @@
   color: #ccc;
 }
 
-#princing-center-btn-1{
+#pricing-center-btn-1{
+  color: white;
+  background-color: #47b2e4;
+}
+#pricing-center-btn-1:hover {
+  background-color: #23a3df;
+}
+.pricing-sidebtn-1:hover{
   color: white;
   background-color: #47b2e4;
 }
