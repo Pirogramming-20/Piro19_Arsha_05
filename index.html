@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="./styles/clients-2.css">
     <link rel="stylesheet" href="./styles/about-2.css">
     <link rel="stylesheet" href="./styles/whyUs-2.css">
+    <link rel="stylesheet" href="./styles/faq-2.css">
+    <link rel="stylesheet" href="./styles/three.css">
     <link rel="stylesheet" href="./styles/four.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/pricing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
         h1, h2, h3, h4, h5, h6 {
             font-family: "Jost", sans-serif;
+        }
+
+        body {
+            line-height: 1.5;
         }
     </style>
     <title>Arsha</title>
@@ -250,6 +259,7 @@
 
 
         <!-- 3번 -->
+        <!--develop branch 첫 업로드용-->
         <div id="Graph-hayoung">
             <div id="Graph_left">
               <div id="Graph_left_img">
@@ -261,86 +271,107 @@
               <div id="Graph_right_content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </div>
-              <div id="Graph_right_Graph">
-                <div id="Graph_right_Graph_1">
-                  <div id="Graph_name">HTML</div>
-                  <div id="percent">100%</div>
-                  <div id="stick">stick</div>
-                  <!--어떻게 박스로 바꿀까. 두개로 쪼갤까. 투명도 조절?-->
+
+              <div class="Graph_right_Graph">
+                <div class="Graph_right_Graph_s">
+                  <div class="graph-bar">
+                    <div class="graph-bar-up">
+                      <span class="graph-bar-up-left">HTML</span>
+                      <div class="graph-bar-up-right">100%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <span class="progress-percent-1"></span>
+                      <!-- <div class="bar-background"></div> -->
+                    </div>
+                  </div>
                 </div>
-                <div id="Graph_right_Graph_2">
-                  <div id="Graph_name">CSS</div>
-                  <div id="percent">90%</div>
-                  <div id="stick">stick</div>
-                  <!--어떻게 박스로 바꿀까. 두개로 쪼갤까. 투명도 조절?-->
-                </div>
-                <div id="Graph_right_Graph_3">
-                  <div id="Graph_name">JAVASCRIPT</div>
-                  <div id="percent">75%</div>
-                  <div id="stick">stick</div>
-                  <!--어떻게 박스로 바꿀까. 두개로 쪼갤까. 투명도 조절?-->
-                </div>
-                <div id="Graph_right_Graph_4">
-                  <div id="Graph_name">PHOTOSHOP</div>
-                  <div id="percent">55%</div>
-                  <div id="stick">stick</div>
-                  <!--어떻게 박스로 바꿀까. 두개로 쪼갤까. 투명도 조절?-->
-                </div>
+                <div class="Graph_right_Graph_s">
+                  <div class="graph-bar">
+                    <div class="graph-bar-up">
+                      <span class="graph-bar-up-left">CSS</span>
+                      <div class="graph-bar-up-right">90%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <span class="progress-percent-2"></span>
+                      <!-- <div class="bar-background"></div> -->
+                    </div>
+                  </div>
+                </div> 
+                <div class="Graph_right_Graph_s">
+                  <div class="graph-bar">
+                    <div class="graph-bar-up">
+                      <span class="graph-bar-up-left">JAVASCRIPT</span>
+                      <div class="graph-bar-up-right">75%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <span class="progress-percent-3"></span>
+                      <!-- <div class="bar-background"></div> -->
+                    </div>
+                  </div>
+                </div> 
+                <div class="Graph_right_Graph_s">
+                  <div class="graph-bar">
+                    <div class="graph-bar-up">
+                      <span class="graph-bar-up-left">PHOTOSHOP</span>
+                      <div class="graph-bar-up-right">55%</div>
+                    </div>
+                    <div class="progress-bar">
+                      <span class="progress-percent-4"></span>
+                      <!-- <div class="bar-background"></div> -->
+                    </div>
+                  </div>
+                </div>    
               </div>
             </div>
         </div>
       
-          <div id="Services-hayoung">
-            <div id="Services_title">SERVICES</div>
-            <div id="Services_content_1">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </div>
-            <div id="Services_content_2">
-              <div id="Services_BOX">
-                <div id="Services_BOX_img">
-                  <img src="./img_three/Services_BOX_img_1.png" />
-                </div>
-                <div id="Services_BOX_titles">Lorem Ipsum</div>
-                <div id="Services_BOX_content">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</div>
+        <div id="Services-hayoung">
+          <h2 id="Services_title">SERVICES</h2>
+          <div id="Services_content_1">
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </d>
+          <div id="Services_content_2">
+            <button class="Services_BOX">
+              <div class="Services_BOX_img">
+                <img src="./img_three/Services_BOX_img_1.png" />
               </div>
-              <div id="Services_BOX">
-                <div id="Services_BOX_img">
-                  <img src="./img_three/Services_BOX_img_2.png" />
-                </div>
-                <div id="Services_BOX_titles">Sed ut perspici</div>
-                <div id="Services_BOX_content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+              <div class="Services_BOX_titles">Lorem Ipsum</div>
+              <div class="Services_BOX_content">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</div>
+            </button>
+            <button class="Services_BOX">
+              <div class="Services_BOX_img">
+                <img src="./img_three/Services_BOX_img_2.png" />
               </div>
-              <div id="Services_BOX">
-                <div id="Services_BOX_img">
-                  <img src="./img_three/Services_BOX_img_3.png" />
-                </div>
-                <div id="Services_BOX_titles">Magni Dolores</div>
-                <div id="Services_BOX_content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+              <div class="Services_BOX_titles">Sed ut perspici</div>
+              <div class="Services_BOX_content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
+            </button>
+            <button class="Services_BOX">
+              <div class="Services_BOX_img">
+                <img src="./img_three/Services_BOX_img_3.png" />
               </div>
-              <div id="Services_BOX">
-                <div id="Services_BOX_img">
-                  <img src="./img_three/Services_BOX_img_4.png" />
-                </div>
-                <div id="Services_BOX_titles">Nemo Enim</div>
-                <div id="Services_BOX_content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</div>
+              <div class="Services_BOX_titles">Magni Dolores</div>
+              <div class="Services_BOX_content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</div>
+            </button>
+            <button class="Services_BOX">
+              <div class="Services_BOX_img">
+                <img src="./img_three/Services_BOX_img_4.png" />
               </div>
-            </div>
+              <div class="Services_BOX_titles">Nemo Enim</div>
+              <div class="Services_BOX_content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</div>
+            </button>
           </div>
-      
-          <div id="CallToAction-hayoung">
-            <div id="CallToAction_left">
-              <img id="CallToAction_left_src" src="./img_three/CallToAction.png" />
-              <div id="CallToAction_left_title">Call To Action</div>
-              <div id="CallToAction_left_content">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-            </div>
-            <div id="CallToAction_right">
-              <div id="CallToAction_right_button">Call To Action</div>
-            </div>
         </div>
+    
+        <div class="call-to-action-hayoung">
+          <div class="call-to-action-hayoung-left">
+            <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          
+          <button>Call To Action</button>
+        </div>
+          
         <!-- 4번 -->
         <section class="section-4">
             <div class="container-4">
@@ -393,10 +424,10 @@
                 </div>
             </div>
         </section>
-        <section class="section-4" id="section-4__team">
+        <section class="section-4" id="section-4__team" style="box-sizing: border-box;">
             <div class="container-4">
                 <div class="section-4__title">
-                    <h2 class="container-4__head">TEAM</h2>
+                    <h2 class="container-4__head" style="width: 100%;">TEAM</h2>
                     <p class="container-4__text">
                         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
                     </p>
@@ -586,6 +617,87 @@
           </div>
         </div>
         <!-- 2번 -->
+        <div id="faq-2">
+            <div id="faq-box-2">
+                <div id="faq-title-2">
+                    <h2 id="faq-h2-2">Frequently Asked Questions</h2>
+                </div>
+                <p id="faq-p-2">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+                <div id="faq-list-2">
+                    <div id="accordion-item-2">
+                        <input type="checkbox" id="item1-4">
+                        <label for="item1-4" id="accordion-question-2">
+                            <span id="accordion-span-2">?</span>
+                            Non consectetur a erat nam at lectus urna duis?
+                            <i id="drop-down"></i>
+                        </label>
+                        <div id="accordion-content-2">
+                            <p id="accordion-p-2">
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="accordion-item-2">
+                        <input type="checkbox" id="item1-5">
+                        <label for="item1-5" id="accordion-question-2">
+                            <span id="accordion-span-2">?</span>
+                            Feugiat scelerisque varius morbi enim nunc? 
+                            <i id="drop-down"></i>
+                        </label>
+                        <div id="accordion-content-2">
+                            <p id="accordion-p-2">
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="accordion-item-2">
+                        <input type="checkbox" id="item1-6">
+                        <label for="item1-6" id="accordion-question-2">
+                            <span id="accordion-span-2">?</span>
+                            Dolor sit amet consectetur adipiscing elit? 
+                            <i id="drop-down"></i>
+                        </label>
+                        <div id="accordion-content-2">
+                            <p id="accordion-p-2">
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="accordion-item-2">
+                        <input type="checkbox" id="item1-7">
+                        <label for="item1-7" id="accordion-question-2">
+                            <span id="accordion-span-2">?</span>
+                            Tempus quam pellentesque nec nam aliquam sem et tortor consequat? 
+                            <i id="drop-down"></i>
+                        </label>
+                        <div id="accordion-content-2">
+                            <p id="accordion-p-2">
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="accordion-item-2">
+                        <input type="checkbox" id="item1-8">
+                        <label for="item1-8" id="accordion-question-2">
+                            <span id="accordion-span-2">?</span>
+                            Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? 
+                            <i id="drop-down"></i>
+                        </label>
+                        <div id="accordion-content-2">
+                            <p id="accordion-p-2">
+                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- 3번 -->
         
       
