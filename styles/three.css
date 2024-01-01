@@ -1,41 +1,100 @@
 @import "./reset.css";
 
+
 #Graph-hayoung{
-    display: flex;
+  display: flex;
+  flex-wrap: wrap; /* 추가: 컨테이너들이 화면 너비에 따라 자동으로 줄바꿈되도록 설정 */
+  padding: 100px 15px; /* 수정: 좌우 패딩을 상대적으로 설정 */
+  justify-content: center; /* 추가: 컨테이너들이 중앙에 위치하도록 설정 */
+  max-width: 1200px; /* 추가: 최대 너비 설정 */
+  margin: auto; /* 수정: 수동으로 설정된 마진을 중앙 정렬로 변경 */
+    
+     
+     
 }
 
-/* 전체 스타일 */
-
-
-/* Graph-hayoung 스타일 */
-
-
-#Graph_left {
+/* #Graph_left {
     flex: 1;
-}
+    width: 100%; 
+    padding-left: 40px;
+    padding-bottom: 20px;
+} */
+#Graph_left, #Graph_right {
+  flex: 1 1 100%; /* 수정: flex-basis를 100%로 설정하여, 990px 이하에서 100% 너비를 가지도록 설정 */
+  box-sizing: border-box; /* 추가: 패딩을 너비에 포함 */
+  padding: 20px; /* 수정: 기존의 padding-left, padding-right 제거하고 상하좌우 패딩으로 변경 */
+}  
 
 #Graph_left_img {
-    width: 456px;
-    height: 280;
+  max-width: 100%; /* 수정: 너비를 최대 100%로 설정하여, 부모 요소의 크기에 맞게 조정 */
+  height: auto; /* 수정: 높이를 auto로 설정하여 비율을 유지 */
 }
+
 #Graph_left_img img {
-    max-width: 100%;
+  width: 100%; /* 수정: 이미지의 너비를 100%로 설정 */
+  height: auto; /* 추가: 이미지의 높이를 auto로 설정하여 비율을 유지 */
 }
 
-
-
+@media (max-width: 990px){
+  #Graph-hayoung {
+    padding: 50px 15px; /* 수정: 상단과 하단 패딩 감소 */
+  }
+  #Graph_left, #Graph_right {
+    width: 100%; /* 수정: 각각의 컨테이너 너비를 100%로 설정 */
+    margin-bottom: 20px; /* 추가: 컨테이너 사이의 마진 추가 */
+    padding: 20px; /* 수정: 좌우 패딩 조정 */
+  }
+}
 
 
 #Graph_right {
     flex: 2;
     padding: 20px;
+    padding-right: 40px;
+    margin-right: 50px;
+    height: 250;
+    align-content: center;
 }
 
+/* ======================================= */
+
+#Graph-hayoung {
+  display: flex;
+  flex-wrap: wrap; /* 화면 너비에 따라 자식 요소들이 감싸질 수 있도록 설정 */
+  padding: 5vw; /* 반응형 패딩 설정 */
+}
+
+#Graph_left, #Graph_right {
+  /* 공통된 스타일 */
+  padding: 20px;
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+#Graph_left {
+  width: 300px;
+  flex: 1 1 100%; /* 작은 화면에서는 100% 너비를 가짐 */
+  max-width: 990px; /* 큰 화면에서는 최대 990px 너비를 가짐 */
+}
+
+#Graph_right {
+  flex: 2 1 100%; /* 작은 화면에서는 100% 너비를 가짐 */
+  max-width: 990px; /* 큰 화면에서는 최대 990px 너비를 가짐 */
+  height: 250px; /* 고정 높이 제거하거나 필요에 따라 조정 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+
+
+
+
+/* =============================== */
+
 #Graph_right_title {
-    font-size: 36px; /*font-size h3태그로 바꾸기*/
+    font-family: 'Jost', sans-serif;
+    font-size: 36px; 
     font-weight: bold;
     margin-bottom: 15px;
-    color: navy;
+    color: #315d8d;
 
 }
 
@@ -49,137 +108,591 @@
     color: navy;
 }
 
-#Graph_right_Graph_1 {
+
+.Graph_right_Graph_s {
+    
+    margin-bottom: 20px; 
+}
+
+
+  .graph-bar {
+    width: 100%;
+  }
+
+  .graph-bar-up {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    
     margin-bottom: 10px;
-}
-
-#Graph_name, 
-#percent {
-    margin-right: 10px;
-}
-
-#stick-bar {
-    height: 20px;
-    flex-grow: 1;
-    background-color: navy;
+    font-weight: bold;
+    
+  }
+  
+  .progress-bar {
     position: relative;
-}
+    background-color: rgb(245, 241, 241);
+    height: 15px;
+    overflow: hidden; /* ??? 내부 요소가 넘쳐흐르지 않도록 처리 */
 
-#stick {
+  }
+  .progress-percent-1 {
+    display: block;
     height: 100%;
-    background-color: gray;
-    position: absolute;
+    width: 100%;
+    background-color: #315d8d;
+
+  }
+  .progress-percent-2 {
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: #315d8d;
+
+  }
+  .progress-percent-3 {
+    display: block;
+    height: 100%;
+    width: 75%;
+    background-color: #315d8d;
+
+  }
+  .progress-percent-4 {
+    display: block;
+    height: 100%;
+    width: 55%;
+    background-color: #315d8d;
+
+  }
+  
+/* ==============
+ */
+/* 화면 너비가 990px 초과일 때 적용될 스타일 */
+@media (min-width: 991px) {
+  #Graph_left, #Graph_right {
+      flex: 1; /* 화면이 넓을 때는 자식 요소들이 나란히 정렬되도록 함 */
+      padding: 20px;
+  }
 }
 
-/* <div id="Graph_right_Graph">
-    <div id="Graph_right_Graph_1">
-        <span id="Graph_name">HTML</span>
-        <div id="stick-bar">
-        <div id="stick" style="width: 100%;"></div>
-        </div>
-        <div id="stick" style="width: 100%;">stick</div>
-        <span id="percent">100%</span>
-    </div> */
-
-/* <div id="Graph_right_Graph">
-    <div class="graph-bar">
-        <span class="graph-name">HTML</span>
-        <div class="progress-bar">
-        <div class="progress" style="width: 100%;"></div>
-        </div>
-        <span class="percent">100%</span>
-    </div>
-</div> */
+/* 화면 너비가 990px 이하일 때 적용될 스타일 */
+@media (max-width: 990px) {
+  #Graph-hayoung {
+      flex-direction: column; /* 자식 요소들이 세로로 쌓이도록 함 */
+  }
+  #Graph_left, #Graph_right {
+      width: 100%; /* 너비를 100%로 설정하여 화면을 꽉 채우도록 함 */
+      padding: 20px;
+      margin-bottom: 20px; /* 요소 사이의 마진 추가 */
+  }
+}
               
 
 
 
 /* Services-hayoung 스타일 */
 #Services-hayoung {
-    padding: 20px;
+    
+    padding: 200px ;
+    
     background-color: #f4f4f4;
+    margin-bottom: 0px;
+    height: auto; 
+    /* 위아래 60 padding  >>>>> */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* margin-left: 200px;
+    margin-right: 200px;
+      */
+
+    
+    
+}
+
+#Services_title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+
 }
 
 #Services_title {
-    font-size: 24px;
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+}
+#Services_title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px); 
 }
 
 #Services_content_1 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: center;  
+    /* color: navy;  */
+    padding: 5px;
 }
 
 #Services_content_2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
-#Services_BOX {
+.Services_BOX {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 100px;
     flex: 1;
-    padding: 10px;
+    padding: 40px;
     background-color: white;
-    border: 1px solid #ddd;
-    text-align: center;
+    border: none;
+    text-align: flex-start;
+    transition: background-color 0.3s, color 0.3s, transform 0.5s ease-out;
 }
+.Services_BOX:hover {
+    color: rgb(93, 184, 226);
+    transform: translateY(-10px);
+}
+/* 되긴하는데 두번째만 호버됨 첫번째는?*/
 
-#Services_BOX_img img {
+.Services_BOX_img img {
     max-width: 100%;
+    width: 36px;;
     height: auto;
+
+    
 }
 
-#Services_BOX_titles {
-    font-size: 18px;
+.Services_BOX_titles {
+    font-family: 'Jost', sans-serif;
+    color: #315d8d;
+    font-size: 24px;
     margin: 10px 0;
-}
-
-#Services_BOX_content {
-    font-size: 14px;
-}
-
-/* CallToAction-hayoung 스타일 */
-#CallToAction-hayoung {
-    display: flex;
-    padding: 20px;
-    background-color: #eee;
-}
-
-#CallToAction_left {
-    flex: 3;
-    padding: 20px;
-}
-
-#CallToAction_left img {
-    max-width: 100%;
-    height: auto;
-}
-
-#CallToAction_left_title {
-    font-size: 22px;
-    margin-top: 15px;
-}
-
-#CallToAction_left_content {
-    margin-top: 10px;
-}
-
-#CallToAction_right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#CallToAction_right_button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    text-align: center;
     cursor: pointer;
 }
 
+.services_BOX_titles:hover {
+    color: rgb(93, 184, 226);
+}
 
 
+/* =========반응형=========== */
+
+.Services_BOX {
+  flex-basis: calc(25% - 20px); /* 4개가 나란히 있을 때의 기본 너비 */
+  /* ... 기타 스타일 ... */
+}
+
+/* 화면 너비에 따른 반응형 스타일 */
+@media (max-width: 1200px) {
+  .Services_BOX {
+      flex-basis: calc(50% - 20px); /* 화면이 1200픽셀 이하일 때 2개씩 나란히 */
+  }
+}
+
+@media (max-width: 760px) {
+  .Services_BOX {
+      flex-basis: 100%; /* 화면이 760픽셀 이하일 때 1개씩 수직 정렬 */
+  }
+  #Services-hayoung {
+    padding-left: 50px; /* 왼쪽 패딩을 50픽셀로 설정 */
+    padding-right: 50px; /* 오른쪽 패딩을 50픽셀로 설정 */
+    /* 위아래 패딩은 그대로 유지하거나 필요에 따라 조정 가능 */
+  }
+}
+
+
+
+/* 호버가 적용안되는 문제 존재 -> button이 아니어서 그런것 같음. */
+
+
+/* CallToAction-hayoung 스타일 */
+/* 해결할 문제 : width 100%여야 하는데 안먹힘.  */
+.call-to-action-hayoung {
+    display: flex;
+    background-image: url('../img_three/CallToAction.png'); 
+    background-size: cover; /* 이미지가 div를 전체적으로 커버 */
+    background-position: center; 
+    text-align: center; 
+    padding: 220px ; 
+    color: white;
+    
+     
+  }
+.call-to-action-hayoung-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.call-to-action-hayoung-left h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+  
+  
+  /* 얜 직접 폰트 설정 */
+  .call-to-action-hayoung button {
+    background-color: transparent; /* 버튼 배경색 투명 */
+    color: white;
+    
+    font-family: 'Jost', sans-serif;
+    font-size: 16px; 
+    /* margin-bottom: 15px; */
+    /* margin-left: 120px; */
+    
+    
+    border: 3px solid white; 
+    
+    width: 300px;
+    
+    padding: 12px 40px; 
+    /* 버튼 내부 패딩 */
+    cursor: pointer; 
+    border-radius: 40px; 
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; 
+    margin: 0px 0px 15px 120px;
+
+  }
+  .call-to-action-hayoung button:hover {
+    background-color: rgb(93, 184, 226); 
+    color: white; 
+    border-color: rgb(93, 184, 226); 
+  }
+
+  
+  .Services_BOX:hover {
+    color: rgb(93, 184, 226);
+}
+
+/* ==========반응형======== */
+
+@media (max-width: 990px) {
+  .call-to-action-hayoung {
+      flex-direction: column; /* 수직으로 스택 */
+      padding: 120px 40px; /* 패딩 조정 */
+  }
+
+  .call-to-action-hayoung-left,
+  .call-to-action-hayoung button {
+      width: 100%; /* 전체 너비 사용 */
+      margin-left: 0; /* 버튼의 왼쪽 마진 제거 */
+      text-align: center; /* 텍스트 가운데 정렬 */
+  }
+
+  .call-to-action-hayoung button {
+      margin-top: 20px; /* 버튼 위에 마진 추가 */
+  }
+}
+
+
+
+/* Contact-hayoung 스타일 */
+#Contact-hayoung { 
+  padding: 100px ;
+  background-color: white;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  
+  height: auto; 
+  
+}
+#Contact_title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+  
+
+}
+#Contact_title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+}
+#Contact_title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px); 
+}
+#Contact_content_text {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#Contact-second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+/* 왼쪽 지도있는 박스 */
+.contact-container-left::before {
+  top: 0; /* 컨테이너 상단에 위치 */
+}
+.contact-container-left {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+  margin: 20px;
+  /* background: #f9f9f9; 배경색 추가 */
+  border-radius: 10px; /* 모서리 둥글게 처리 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
+  width: 100%; /* 컨테이너 너비 설정 */
+  max-width: 500px; /* 최대 너비 설정 */
+  height: 600px;
+  position: relative; /* 상대적 위치 설정 */
+  padding-top: 10px; /* 상단 파란색 줄을 위한 공간 */
+  padding-bottom: 10px; /* 하단 파란색 줄을 위한 공간 */
+  height: 620px;
+}
+.contact-container-left::after {
+  bottom: 0; /* 컨테이너 하단에 위치 */
+}
+
+.contact-container-left::before,
+.contact-container-left::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #47b2e4; /* 파란색 배경 설정 */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 15px;
+  color: #37517e;
+  font-family: "Jost", sans-serif;
+  /* border-bottom: 1px solid #eaeaea; 아이템 하단 경계선 추가 */
+}
+
+.info-item:last-child {
+  border-bottom: none; /* 마지막 아이템의 하단 경계선 제거 */
+}
+
+.info-item img {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* 아이콘 동그라미 모양 만들기 */
+  transition: background-color 0.3s, transform 0.3s; /* 배경색과 변환에 부드러운 효과 적용 */
+  background-color: #d3f1ff; 
+  padding: 8px; /* 아이콘과 테두리 사이의 공간 */
+}
+.info-item img:hover {
+  transform: scale(1.1); /* 아이콘을 10% 크게 만들기 */
+  background-color: #47b2e4; /* 호버 시 그림자 효과 */
+}
+
+.info-item p {
+  margin: 0; /* <p> 태그의 기본 마진 제거 */
+  font-weight: bold; /* 글씨 굵게 */
+  color: #333; /* 글씨 색상 조정 */
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 0 0 10px 10px; /* 하단 모서리만 둥글게 처리 */
+}
+
+
+/* 오른쪽 표 */
+.contact-container-right::before {
+  top: 0; /* 컨테이너 상단에 위치 */
+}
+.contact-container-right {
+  display: flex;
+  flex-direction: column;
+  width: 60%; /* 레이아웃에 맞게 너비 조정 */
+  justify-content: center;
+  /* background: #f9f9f9; */
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative; /* 상대적 위치 설정 */
+  padding-top: 10px; /* 상단 파란색 줄을 위한 공간 */
+  padding-bottom: 10px; /* 하단 파란색 줄을 위한 공간 */
+  height: 620px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-container-right::after {
+  bottom: 0; /* 컨테이너 하단에 위치 */
+}
+.contact-container-right::before,
+.contact-container-right::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #47b2e4; /* 파란색 배경 설정 */
+}
+
+.contact-container-right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* 컨테이너의 전체 너비를 차지하도록 설정 */
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap; /* 작은 화면에서 입력란이 감싸지도록 설정 */
+  
+  margin-bottom: 20px;
+}
+
+
+
+.input-group label {
+  display: block; /* 라벨을 블록 요소로 만들어 줄 바꿈 */
+  margin-bottom: 5px; /* 라벨과 입력 필드 사이의 공간 */
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+  width: 100%; /* 전체 너비 */
+  padding: 10px; /* 패딩 */
+  border: 1px solid #ccc; /* 테두리 */
+  border-radius: 4px; /* 모서리 둥글기 */
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+.input-group textarea {
+  height: 150px; /* 텍스트 영역의 높이 */
+  resize: vertical; /* 세로로만 리사이즈 가능 */
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 버튼 위의 공간 추가 */
+}
+/* ddddd */
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+  width: 100%; /* 전체 너비 */
+  padding: 10px; /* 패딩 */
+  border: 1px solid #ccc; /* 테두리 */
+  border-radius: 4px; /* 모서리 둥글기 */
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+.input-group textarea {
+  height: 150px; /* 텍스트 영역의 높이 */
+  resize: vertical; /* 세로로만 리사이즈 가능 */
+  
+}
+/* ddddd */
+
+button[type="submit"] {
+  padding: 15px 30px; /* 더 큰 버튼을 위한 패딩 증가 */
+  font-size: 18px; /* 가독성을 위한 폰트 크기 증가 */
+  background-color: #47b2e4;
+  color: white;
+  border: none;
+  border-radius: 30px; /* 버튼의 모서리 둥글게 */
+  cursor: pointer;
+  width: auto; /* 내용에 따라 자동으로 너비 설정 */
+  height: auto; /* 내용에 따라 자동으로 높이 설정 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 버튼에 깊이를 주기 위한 그림자 추가 */
+  transition: background-color 0.3s; /* 호버 효과를 위한 부드러운 전환 */
+}
+
+button[type="submit"]:hover {
+  background-color: #399ec9;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="email"] {
+    flex: none; /* 작은 화면에서는 flex 비활성화 */
+    width: 100%; /* 작은 화면에서 입력란의 전체 너비 설정 */
+  }
+}
+
+@media (max-width: 990px) {
+  
+  #Contact-second {
+    flex-direction: column; /* 수직 스택 */
+    ;
+  }
+
+  .contact-container-left,
+  .contact-container-right {
+    width: 100%; /* 전체 너비 사용 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    margin: 20px 0; /* 위아래 여백 추가 */
+  }
+
+  .contact-container-left {
+    order: 2; /* 지도를 입력 폼 아래에 배치 */
+  }
+
+  .contact-container-right {
+    order: 1; /* 입력 폼을 지도 위에 배치 */
+  }
+}
