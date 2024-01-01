@@ -1,14 +1,16 @@
 @import "./reset.css";
 
+/* 폰트 통일되었나? */
+
+
+
+
 #Graph-hayoung{
     display: flex;
+    padding: 100px;
+     
+     
 }
-
-/* 전체 스타일 */
-
-
-/* Graph-hayoung 스타일 */
-
 
 #Graph_left {
     flex: 1;
@@ -16,12 +18,13 @@
 
 #Graph_left_img {
     width: 456px;
-    height: 280;
+    height: 280px; 
 }
 #Graph_left_img img {
     max-width: 100%;
+    height: auto;
+    
 }
-
 
 
 
@@ -32,10 +35,11 @@
 }
 
 #Graph_right_title {
-    font-size: 36px; /*font-size h3태그로 바꾸기*/
+    font-family: 'Jost', sans-serif;
+    font-size: 36px; 
     font-weight: bold;
     margin-bottom: 15px;
-    color: navy;
+    color: #315d8d;
 
 }
 
@@ -49,137 +53,234 @@
     color: navy;
 }
 
-#Graph_right_Graph_1 {
+
+.Graph_right_Graph_s {
+    
+    margin-bottom: 20px; 
+  }
+  .graph-bar {
+    width: 100%;
+  }
+
+  .graph-bar-up {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    
     margin-bottom: 10px;
-}
-
-#Graph_name, 
-#percent {
-    margin-right: 10px;
-}
-
-#stick-bar {
-    height: 20px;
-    flex-grow: 1;
-    background-color: navy;
+    font-weight: bold;
+    
+  }
+  
+  .progress-bar {
     position: relative;
-}
+    background-color: rgb(245, 241, 241);
+    height: 15px;
+    overflow: hidden; /* ??? 내부 요소가 넘쳐흐르지 않도록 처리 */
 
-#stick {
+  }
+  .progress-percent-1 {
+    display: block;
     height: 100%;
-    background-color: gray;
-    position: absolute;
-}
+    width: 100%;
+    background-color: #315d8d;
 
-/* <div id="Graph_right_Graph">
-    <div id="Graph_right_Graph_1">
-        <span id="Graph_name">HTML</span>
-        <div id="stick-bar">
-        <div id="stick" style="width: 100%;"></div>
-        </div>
-        <div id="stick" style="width: 100%;">stick</div>
-        <span id="percent">100%</span>
-    </div> */
+  }
+  .progress-percent-2 {
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: #315d8d;
 
-/* <div id="Graph_right_Graph">
-    <div class="graph-bar">
-        <span class="graph-name">HTML</span>
-        <div class="progress-bar">
-        <div class="progress" style="width: 100%;"></div>
-        </div>
-        <span class="percent">100%</span>
-    </div>
-</div> */
+  }
+  .progress-percent-3 {
+    display: block;
+    height: 100%;
+    width: 75%;
+    background-color: #315d8d;
+
+  }
+  .progress-percent-4 {
+    display: block;
+    height: 100%;
+    width: 55%;
+    background-color: #315d8d;
+
+  }
+  
+
+
               
 
 
 
 /* Services-hayoung 스타일 */
 #Services-hayoung {
-    padding: 20px;
+    
+    padding: 100px ;
+    
     background-color: #f4f4f4;
+    margin-bottom: 0px;
+    height: auto; 
+    
+}
+
+#Services_title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+
 }
 
 #Services_title {
-    font-size: 24px;
+    /* text-align: center;  
+    font-family: 'Jost', sans-serif;
+    font-size: 36px; 
     font-weight: bold;
-    margin-bottom: 15px;
+    color: #315d8d; */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+}
+#Services_title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px); 
 }
 
 #Services_content_1 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: center;  
+    /* color: navy;  */
+    padding: 5px;
 }
 
 #Services_content_2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
-#Services_BOX {
+.Services_BOX {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 100px;
     flex: 1;
-    padding: 10px;
+    padding: 40px;
     background-color: white;
-    border: 1px solid #ddd;
-    text-align: center;
+    border: none;
+    text-align: flex-start;
+    transition: background-color 0.3s, color 0.3s, transform 0.5s ease-out;
 }
+.Services_BOX:hover {
+    color: rgb(93, 184, 226);
+    transform: translateY(-10px);
+}
+/* 되긴하는데 두번째만 호버됨 첫번째는?*/
 
-#Services_BOX_img img {
+.Services_BOX_img img {
     max-width: 100%;
+    width: 36px;;
     height: auto;
+
+    
 }
 
-#Services_BOX_titles {
-    font-size: 18px;
+.Services_BOX_titles {
+    font-family: 'Jost', sans-serif;
+    color: #315d8d;
+    font-size: 24px;
     margin: 10px 0;
-}
-
-#Services_BOX_content {
-    font-size: 14px;
-}
-
-/* CallToAction-hayoung 스타일 */
-#CallToAction-hayoung {
-    display: flex;
-    padding: 20px;
-    background-color: #eee;
-}
-
-#CallToAction_left {
-    flex: 3;
-    padding: 20px;
-}
-
-#CallToAction_left img {
-    max-width: 100%;
-    height: auto;
-}
-
-#CallToAction_left_title {
-    font-size: 22px;
-    margin-top: 15px;
-}
-
-#CallToAction_left_content {
-    margin-top: 10px;
-}
-
-#CallToAction_right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#CallToAction_right_button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    text-align: center;
     cursor: pointer;
 }
 
+.services_BOX_titles:hover {
+    color: rgb(93, 184, 226);
+}
 
+/* 호버가 적용안되는 문제 존재 -> button이 아니어서 그런것 같음. */
+
+
+/* CallToAction-hayoung 스타일 */
+/* 해결할 문제 : width 100%여야 하는데 안먹힘.  */
+.call-to-action-hayoung {
+    display: flex;
+    background-image: url('../img_three/CallToAction.png'); 
+    background-size: cover; /* 이미지가 div를 전체적으로 커버 */
+    background-position: center; 
+    text-align: center; 
+    padding: 100px ; 
+    color: white;
+     
+  }
+.call-to-action-hayoung-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.call-to-action-hayoung-left h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 28px; 
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+  
+  
+  /* 얜 직접 폰트 설정 */
+  .call-to-action-hayoung button {
+    background-color: transparent; /* 버튼 배경색 투명 */
+    color: white;
+    
+    font-family: 'Jost', sans-serif;
+    font-size: 16px; 
+    /* margin-bottom: 15px; */
+    /* margin-left: 120px; */
+    
+    
+    border: 3px solid white; 
+    
+    width: 300px;
+    
+    padding: 12px 40px; 
+    /* 버튼 내부 패딩 */
+    cursor: pointer; 
+    border-radius: 40px; 
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; 
+    margin: 0px 0px 15px 120px;
+
+  }
+  .call-to-action-hayoung button:hover {
+    background-color: rgb(93, 184, 226); 
+    color: white; 
+    border-color: rgb(93, 184, 226); 
+  }
+
+  
+  .Services_BOX:hover {
+    color: rgb(93, 184, 226);
+    
+
+}
+  
 
